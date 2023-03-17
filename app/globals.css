@@ -12,14 +12,16 @@ html,
 body {
   max-width: 100dvw;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
-  @apply bg-theme-black
+  @apply bg-theme-black;
 }
 
 a {
-  color: inherit;
+  @apply text-inherit;
+  
   text-decoration: none;
 }
 

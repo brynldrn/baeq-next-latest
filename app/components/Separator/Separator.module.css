@@ -1,0 +1,5 @@
+.separator {
+  @apply flex shrink-0 h-1 w-64 mx-auto my-10;
+
+  background-image: linear-gradient(to right, #3F72AF, #00ADB5, #393E46);
+}
