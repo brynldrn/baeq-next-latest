@@ -1,5 +1,6 @@
 import { Fira_Code, Manrope } from 'next/font/google'
 import Header from './components/Header'
+import Projects from './components/Projects/Projects'
 import Separator from './components/Separator/Separator'
 import Timeline from './components/Timeline/Timeline'
 
@@ -30,6 +31,9 @@ export default function Home() {
 
         {/* separator component */}
         <Separator />
+
+        {/* Projects component */}
+        <Projects />
       </div>
     </main>
   )
