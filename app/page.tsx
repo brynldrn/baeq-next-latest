@@ -1,7 +1,7 @@
 import { Fira_Code, Manrope } from 'next/font/google'
 import Header from './components/Header'
 import Separator from './components/Separator/Separator'
-import Timeline from './components/Timeline'
+import Timeline from './components/Timeline/Timeline'
 
 const manrope = Manrope({
   subsets: ['latin'],
