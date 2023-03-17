@@ -1,5 +1,6 @@
 import { BsPersonWorkspace } from 'react-icons/bs'
 import { MdOutlineHomeWork } from 'react-icons/md'
+import { BiLinkExternal } from 'react-icons/bi'
 
 export default function Timeline() {
   return (
@@ -15,16 +16,20 @@ export default function Timeline() {
           {/* timeline item */}
           <div className="relative mb-4">
             {/* timeline icon */}
-            <div className='absolute top-0 -left-[86px] w-12 h-12 rounded-full text-2xl text-theme-white bg-theme-light-blue flex items-center justify-center'>
+            <div className='absolute top-0 -left-[86px] w-12 h-12 rounded-full text-2xl text-theme-white bg-gradient-to-br from-theme-blue to-theme-light-blue flex items-center justify-center'>
               <BsPersonWorkspace />
             </div>
             {/* timeline body */}
-            <div className='mix-blend-normal rounded-lg shadow-xl bg-theme-gray p-5 relative text-theme-white border-b-2 border-b-theme-light-blue'>
+            <div className='mix-blend-normal rounded-lg shadow-xl bg-gradient-to-br from-theme-blue to-theme-light-blue p-5 relative text-theme-white border-b-2 border-b-theme-white'>
               <h2 className='block mb-3'>
                 <span className='block'>iCube Digital Solutions Inc.</span>
                 <span className='text-xs inline-block bg-theme-light-blue rounded-sm px-1'>2022 - present</span>
               </h2>
-              <p className='text-theme-white/40'>Senior React Developer</p>
+              <p className='text-theme-white'>Senior React Developer</p>
+              <a href="https://i-cube-digitalsolutions.com/" target="_blank" className='inline-flex gap-1 items-center'>
+                <span>Visit Site</span>
+                <BiLinkExternal />
+              </a>
             </div>
           </div>
           {/* timeline item */}
@@ -40,6 +45,10 @@ export default function Timeline() {
                 <span className='text-xs inline-block bg-theme-blue rounded-sm px-1'>2018 - 2022</span>
               </h2>
               <p className='text-theme-white/40'>Full Stack Web Developer</p>
+              <a href="https://www.codeandtheory.com/" target="_blank" className='inline-flex gap-1 items-center'>
+                <span>Visit Site</span>
+                <BiLinkExternal />
+              </a>
             </div>
           </div>
           {/* timeline item */}
@@ -55,6 +64,10 @@ export default function Timeline() {
                 <span className='text-xs inline-block bg-theme-blue rounded-sm px-1'>2017 - 2018</span>
               </h2>
               <p className='text-theme-white/40'>Systems Engineer</p>
+              <a href="https://www.phase1-ph.com/" target="_blank" className='inline-flex gap-1 items-center'>
+                <span>Visit Site</span>
+                <BiLinkExternal />
+              </a>
             </div>
           </div>
           {/* timeline item */}
@@ -70,6 +83,10 @@ export default function Timeline() {
                 <span className='text-xs inline-block bg-theme-blue rounded-sm px-1'>2015 - 2017</span>
               </h2>
               <p className='text-theme-white/40'>Frontend Developer</p>
+              <a href="https://www.straightarrow.com.ph/" target="_blank" className='inline-flex gap-1 items-center'>
+                <span>Visit Site</span>
+                <BiLinkExternal />
+              </a>
             </div>
           </div>
         </div>

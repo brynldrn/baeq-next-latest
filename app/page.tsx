@@ -27,6 +27,9 @@ export default function Home() {
 
         {/* timeline component */}
         <Timeline />
+
+        {/* separator component */}
+        <Separator />
       </div>
     </main>
   )
