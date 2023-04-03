@@ -6,6 +6,8 @@ import Separator from './components/Separator/Separator'
 import Timeline from './components/Timeline/Timeline'
 import client from './client'
 import { ProjectType } from './types/project'
+import { SiGithub, SiGmail } from 'react-icons/si'
+import { HiHeart } from 'react-icons/hi'
 
 const manrope = Manrope({
   subsets: ['latin'],
@@ -67,6 +69,21 @@ export default async function Home() {
 
         {/* Projects component */}
         <Projects projects={data?.projects} />
+
+        {/* separator component */}
+        <Separator />
+
+        <section id="socials">
+          <h1 className='text-theme-white font-bold text-3xl'>Socials<span className='font-mono text-theme-light-blue'>.</span></h1>
+          <div className="text-white/40 block mt-3">You can reach me through the following channels:</div>
+          <div className='flex w-full justify-center items-center mt-4 mb-10 text-theme-light-blue gap-3'>
+            <a href="https://github.com/brynldrn" target="_blank" rel="noopener noreferrer" className='!text-3xl'><SiGithub /></a>
+            <a href="mailto:quinalayobryanaldrin@gmail.com" target="_blank" rel="noopener noreferrer" className='!text-3xl'><SiGmail /></a>
+          </div>
+        </section>
+        <section className='my-5 flex justify-center items-center text-theme-white text-base'>
+          &copy; 2023 brynldrn <HiHeart />
+        </section>
       </div>
     </main>
   )

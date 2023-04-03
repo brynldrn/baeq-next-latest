@@ -8,7 +8,7 @@ import TechIcon from "../TechIcon";
 export default function Projects({ projects }: { projects: ProjectType[] }) {
   console.log('projects :>> ', projects);
   return (
-    <section id="projects" className="pb-20">
+    <section id="projects" className="pb-10">
       <h1 className='text-theme-white font-bold text-3xl'>Projects<span className='font-mono text-theme-light-blue'>.</span></h1>
       <div className="flex w-full gap-5 flex-wrap mt-5">
         {
