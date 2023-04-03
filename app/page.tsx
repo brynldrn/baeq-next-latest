@@ -6,12 +6,14 @@ import Timeline from './components/Timeline/Timeline'
 
 const manrope = Manrope({
   subsets: ['latin'],
-  variable: '--font-manrope', 
+  variable: '--font-manrope',
+  display: 'swap'
 })
 
 const firaCode = Fira_Code({
   subsets: ['latin'],
   variable: '--font-firacode', 
+  display: 'swap'
 })
 
 export default function Home() {

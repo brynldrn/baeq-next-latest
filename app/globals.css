@@ -10,6 +10,8 @@
 
 html,
 body {
+  @apply font-sans;
+  
   max-width: 100dvw;
   overflow-x: hidden;
   scroll-behavior: smooth;
