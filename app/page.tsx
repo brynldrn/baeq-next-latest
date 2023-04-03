@@ -1,8 +1,11 @@
+import { gql } from 'graphql-request'
 import { Fira_Code, Manrope } from 'next/font/google'
 import Header from './components/Header'
 import Projects from './components/Projects/Projects'
 import Separator from './components/Separator/Separator'
 import Timeline from './components/Timeline/Timeline'
+import client from './client'
+import { ProjectType } from './types/project'
 
 const manrope = Manrope({
   subsets: ['latin'],
@@ -16,7 +19,35 @@ const firaCode = Fira_Code({
   display: 'swap'
 })
 
-export default function Home() {
+async function getProjects() {
+  const query = gql`
+    query getProjects {
+      projects(orderBy: year_DESC) {
+        id
+        name
+        updatedAt
+        url
+        year
+        imageCap {
+          url
+        }
+        siteLogo {
+          url
+        }
+        techStack
+      }
+    }`;
+  
+  const res: {
+    projects: ProjectType[]
+  } = await client.request(query);
+  
+  return res;
+}
+
+export default async function Home() {
+  const data = await getProjects()
+
   return (
     <main className={`${manrope.variable} ${firaCode.variable} font-sans`} id="top">
       <Header />
@@ -35,7 +66,7 @@ export default function Home() {
         <Separator />
 
         {/* Projects component */}
-        <Projects />
+        <Projects projects={data?.projects} />
       </div>
     </main>
   )
