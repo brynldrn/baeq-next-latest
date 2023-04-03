@@ -81,7 +81,7 @@ export default async function Home() {
             <a href="mailto:quinalayobryanaldrin@gmail.com" target="_blank" rel="noopener noreferrer" className='!text-3xl'><SiGmail /></a>
           </div>
         </section>
-        <section className='my-5 flex justify-center items-center text-theme-white text-base'>
+        <section className='my-5 flex justify-center items-center text-theme-light-blue text-base'>
           &copy; 2023 brynldrn <HiHeart />
         </section>
       </div>
