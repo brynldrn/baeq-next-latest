@@ -11,7 +11,7 @@ export default function Timeline() {
           {/* line */}
           <div className="w-1 h-full absolute top-0 left-0 bg-theme-gray" />
           <TimelineItem
-            companyName='iCube Digital Solutions Inc.'
+            companyName='[CONFIDENTIAL]'
             year='2022 - present'
             position='Senior React Developer'
             url=''
