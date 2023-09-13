@@ -17,7 +17,7 @@ const manrope = Manrope({
 
 const firaCode = Fira_Code({
   subsets: ['latin'],
-  variable: '--font-firacode', 
+  variable: '--font-firacode',
   display: 'swap'
 })
 
@@ -39,11 +39,11 @@ async function getProjects() {
         techStack
       }
     }`;
-  
+
   const res: {
     projects: ProjectType[]
   } = await client.request(query);
-  
+
   return res;
 }
 
@@ -56,7 +56,8 @@ export default async function Home() {
       <div className='px-5 mt-10 md:px-20 md:max-w-4xl md:mx-auto'>
         <h1 className='text-5xl font-bold text-white'>Bryan Aldrin E. Quinalayo<span className='font-mono text-theme-light-blue'>.</span></h1>
         <h2 className='text-3xl font-extralight text-white/40'>I build things for the web<span className='font-mono text-theme-light-blue'>.</span></h2>
-        <div className="text-white/40 block mt-3">I&rsquo;m a React Developer by profession for more than 8 years now. Creating websites and webapps has always been my time-killer besides gaming. Hit me up for gigs<span className='font-mono text-theme-light-blue'>!</span></div>
+        <div className="text-white/40 block mt-3">I&rsquo;m a React Developer by profession for more than 8 years now. Creating websites and webapps has always been my time-killer besides gaming. <span className='hidden'>
+        Hit me up for gigs<span className='font-mono text-theme-light-blue'>!</span></span></div>
 
         {/* separator component */}
         <Separator />

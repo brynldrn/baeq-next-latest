@@ -7,7 +7,7 @@ type TimelineItemType = {
   companyName: string,
   year: string,
   position: string,
-  url: string,
+  url?: string,
   isActive?: boolean,
 }
 
@@ -34,10 +34,12 @@ export default function TimelineItem({ companyName, year, position, url, isActiv
           })}>{ year }</span>
         </h2>
         <p className='text-theme-white/40'>{ position }</p>
-        <a href={url} target="_blank" className='inline-flex gap-1 items-center'>
-          <span>Visit Site</span>
-          <BiLinkExternal />
-        </a>
+        {url && (
+          <a href={url} target="_blank" className='inline-flex gap-1 items-center'>
+            <span>Visit Site</span>
+            <BiLinkExternal />
+          </a>
+        )}
       </div>
     </div>
   )
