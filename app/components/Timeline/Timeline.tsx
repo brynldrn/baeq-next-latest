@@ -11,8 +11,15 @@ export default function Timeline() {
           {/* line */}
           <div className="w-1 h-full absolute top-0 left-0 bg-theme-gray" />
           <TimelineItem
+            companyName='Nelnet Philippines Inc'
+            year='2023 - Present'
+            position='Software Engineer II'
+            url=''
+            isActive
+          />
+          <TimelineItem
             companyName='[CONFIDENTIAL]'
-            year='2022 - present'
+            year='2022 - 2023'
             position='Senior React Developer'
             url=''
             isActive
@@ -21,19 +28,19 @@ export default function Timeline() {
             companyName='Code & Theory'
             year='2018 - 2022'
             position='Full Stack Web Developer'
-            url='https://www.codeandtheory.com/'
+            url=''
           />
           <TimelineItem
             companyName='Phase 1 Philippines'
             year='2017 - 2018'
             position='Systems Engineer'
-            url='https://www.phase1-ph.com/'
+            url=''
           />
           <TimelineItem
             companyName='StraightArrow Corp.'
             year='2015 - 2017'
             position='Frontend Developer'
-            url='https://www.straightarrow.com.ph/'
+            url=''
           />
         </div>
       </div>
