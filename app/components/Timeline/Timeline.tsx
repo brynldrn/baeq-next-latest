@@ -22,7 +22,6 @@ export default function Timeline() {
             year='2022 - 2023'
             position='Senior React Developer'
             url=''
-            isActive
           />
           <TimelineItem
             companyName='Code & Theory'
