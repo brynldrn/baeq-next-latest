@@ -18,7 +18,7 @@ export default function Timeline() {
             isActive
           />
           <TimelineItem
-            companyName='[CONFIDENTIAL]'
+            companyName='i-cube Digital Solutions'
             year='2022 - 2023'
             position='Senior React Developer'
             url=''
