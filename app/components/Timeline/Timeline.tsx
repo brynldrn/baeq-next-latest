@@ -13,7 +13,7 @@ export default function Timeline() {
           <TimelineItem
             companyName='Nelnet Philippines Inc'
             year='2023 - Present'
-            position='Software Engineer II'
+            position='Senior Software Engineer'
             url=''
             isActive
           />
